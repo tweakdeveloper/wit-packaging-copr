@@ -1,0 +1,18 @@
+--- wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c-old/project/setup/load-titles.sh	2021-10-06 08:13:32.745114601 -0400
++++ wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c/project/setup/load-titles.sh	2021-10-06 08:46:54.135959788 -0400
+@@ -30,12 +30,11 @@
+ 
+ NEEDED="wit tr"
+ 
+-BASE_PATH="@@INSTALL-PATH@@"
+-SHARE_PATH="@@SHARE-PATH@@"
+-URI_TITLES=@@URI-TITLES@@
++SHARE_PATH="/usr/share/wit"
++URI_TITLES="@@URI-TITLES@@"
+ LANGUAGES="@@LANGUAGES@@"
+ 
+-SHARE_DIR=./share
++SHARE_DIR="/tmp"
+ 
+ #------------------------------------------------------------------------------
+ 

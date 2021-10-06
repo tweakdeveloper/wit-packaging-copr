@@ -1,0 +1,12 @@
+diff -urN wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c-old/project/Makefile wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c/project/Makefile
+--- wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c-old/project/Makefile	2021-10-06 08:13:32.743114514 -0400
++++ wiimms-iso-tools-e58ce7463bc8829c46bcba52e8232f550e49c17c/project/Makefile	2021-10-06 08:14:23.763328401 -0400
+@@ -710,7 +710,7 @@
+ 	@( cd "$(DISTRIB_PATH)/bin" && ./windows-install.sh --cygwin )
+ else
+ 	@chmod a+x install.sh
+-	@./install.sh --make
++	@./install.sh --no-sudo --make INSTALL_PATH=$(INSTALL_PATH)
+ endif
+ 
+ .PHONY : install+
